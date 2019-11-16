@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Mapview 8.0</title>
+        <script src="smk.js"
+            smk-container-sel="#smk-map-frame"
+            smk-title-sel="#header-title, head title"
+            smk-config="map-config.json|?"
+        ></script>
+        <!-- - - - - - - - - - - - - - - -->
+        <style>
+            #smk-map-frame {
+                position: absolute;
+                top: 40px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+        </style>
+        <style>
+            html, body, #smk-map-frame
+            {
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                width: 100%;
+            }
+
+             #buttonsDiv
+             {
+			    position: absolute;
+			    top: 282px;
+			    right: 5px;
+			    padding: 12px;
+			    color: #6e6e6e;
+			    background-color: rgba(255, 255, 255, 1.0);
+			    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+			    z-index: 100000;
+			 }
+
+			 #toggleBtn
+			 {
+			 	position: absolute;
+			    top: 53px;
+			    right: 78px;
+			    /* padding: 12px; */
+			    color: #6e6e6e;
+			    background-color: rgba(255, 255, 255, 1.0);
+			    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+			    z-index: 100000;
+			 }
+
+			 #indicatorSpan
+			 {
+			    display: inline-block;
+			    vertical-align: middle;
+			    width: 30px;
+			    height: 30px;
+			    background-color: rgba(100, 100, 100, 0.8);
+			    border: 2px solid #ccc;
+      		}
+        </style>
+    </head>
+    <body>
+    	<div style="height: 40px; background: black;">
+    		<img src="./img/bc_gov_logo.png" style="height: 30px; position: absolute; margin: 10px;"><span style="margin-left: 100px; max-width: calc(100vw - 230px); color: white; font-family: 'Avenir Next W00','Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 30px; height: 40px; width: 100%; overflow: hidden; position: relative; display: inline-block; text-overflow: ellipsis; white-space: nowrap;">Mapview 8.0</span>
+    	</div>
+        <div id="smk-map-frame" style="height: calc(100vh - 40px);"></div>
+        <!-- div id="buttonsDiv">
+	    	<button id="rotateAntiClockwiseSpan" title="Rotate 90Â°">&lt;</button>
+		    <button id="indicatorSpan"></button>
+		    <button id="rotateClockwiseSpan" title="Rotate 90Â°">&gt;</button>
+		    <input
+		        class="toggleBtn esri-component esri-widget--button esri-widget esri-interactive"
+		        type="button"
+		        id="switch-btn"
+		        value="2D"
+		      />
+    	</div -->
+    </body>
+</html>
